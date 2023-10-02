@@ -1,0 +1,33 @@
+Peter: But since we're all gonna die, there's one more secret I feel I have to share with you. I did not care for The Godfather.
+Lois: What?
+Peter: Did not care for The Godfather.
+Chris: How can you even say that, dad?
+Peter: Didn't like it.
+Lois: Peter, it's so good! It's like the perfect movie!
+Peter: This is what everyone always said. Whenever they say...
+Chris: Robert De Niro, Al Pacino, I mean, you never see, Robert Duvall!
+Peter: Fine. Fine. Fine actor, did not like the movie.
+Brian: Why not?
+Peter: Did not...couldn't get into it.
+Lois: Explain yourself. What didn't you like about it?
+Peter: It insists upon itself, Lois.
+Lois: What?
+Peter: It insists upon itself.
+Lois: What does that even mean?
+Chris: Because it has a valid point to make, it's insisted!
+Peter: It takes forever getting in; you spend like six and a half hours... You know, I can't get through, I've never even finished the movie. I've never seen the ending.
+Chris: You've never seen the ending?!
+Stewie: How can you say you don't like it if you haven't even given it a chance?
+Lois: I agree with Stewie. It's not really fair.
+Chris: It's outrageous.
+Peter: I have tried on three separate occasions to get through it, and I get to the scene where all the guys are sitting around on the easy chairs.
+Lois: Yeah, it's a great scene. I love that scene.
+Peter: I have no idea what they're talking about. It's like they're speaking a different... You know, that's where I lose interest in it.
+Lois: You know what, Peter,
+Chris: They're speaking Italian!
+Lois: The language they're speaking is a language of subtlety; it's something you don't understand.
+Peter: I love The Money Pit. That is my answer to that statement.
+Lois: Exactly.
+Peter: Well, there you go.
+Lois: Whatever.
+Chris: I like that movie too.
