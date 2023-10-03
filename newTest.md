@@ -1,6 +1,6 @@
 - **Peter**: But since we're all gonna die, there's one more secret I feel I have to share with you. I did not care for The Godfather.
 - **Lois**: What?
-- Peter: Did not care for The Godfather.
+- # Peter: Did not care for The Godfather.
 - **Chris**: How can you even say that, dad?
 - Peter: Didn't like it.
 - Lois: Peter, it's so good! It's like the perfect movie!
@@ -10,11 +10,11 @@
 - Brian: Why not?
 - Peter: Did not...couldn't get into it.
 - Lois: Explain yourself. What didn't you like about it?
-- Peter: It insists upon itself, Lois.
+- Peter: It *insists* upon itself, Lois.
 - Lois: What?
-- Peter: It insists upon itself.
+- Peter: It *insists* upon itself.
 - Lois: What does that even mean?
-- Chris: Because it has a valid point to make, it's insisted!
+- Chris: Because it has a valid point to make, it's *insisted*!
 - Peter: It takes forever getting in; you spend like six and a half hours... You know, I can't get through, I've never even finished the movie. I've never seen the ending.
 - Chris: You've never seen the ending?!
 - **Stewie**: How can you say you don't like it if you haven't even given it a chance?
