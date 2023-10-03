@@ -1,4 +1,4 @@
-- **Peter**: But since we're all gonna die, there's one more secret I feel I have to share with you. I did not care for The Godfather.
+> - **Peter**: But since we're all gonna die, there's one more secret I feel I have to share with you. I did not care for The Godfather.
 - **Lois**: What?
 - # Peter: Did not care for The Godfather.
 - **Chris**: How can you even say that, dad?
