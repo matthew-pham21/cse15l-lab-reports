@@ -55,4 +55,4 @@ b) **Terminal ssh without passwords**
 
 # 3. **Reflection**
 
-In lab report from week two and three, I learned about what ```ssh``` is on a more in-depth level, and specifically what it's functions is, which definitely expands the amount of resources and files available to us (and it feels like hacking in a somewhat ethical sense). Perhaps more prescient was the idea of creating a local server running all by itself. Normally most websites I know are created from templates or borrowing domains, so learning to create one hosted on a local server was very revelatory. 
+- In lab report from week two and three, I learned about what ```ssh``` is on a more in-depth level, and specifically what it's functions is, which definitely expands the amount of resources and files available to us (and it feels like hacking in a somewhat ethical sense). Perhaps more prescient was the idea of creating a local server running all by itself. Normally most websites I know are created from templates or borrowing domains, so learning to create one hosted on a local server was very revelatory. 
