@@ -1,6 +1,6 @@
 # For this lab report, we were required to test nine different cases between three commands: *cd* (change directory) , *ls* (list), and *cat* (concatenate). Here are the following results:
 
-**1. cd (change directory)**
+# **1. cd (change directory)**
 
 ![image](cd(noarg).jpg)
 
@@ -14,7 +14,7 @@
 
 - For this cd command, we use the cd line command in a terminal, with the argument of README file, which resides inside of the lecture1 directory, and using the cd line command on README, it shows an error, telling us that README is not a directory, so the directory itself is not changed either. The reason for this is because when we change directories, the arguments themselves have to be directories in and of themselves, and as such, going to a txt file, like README, instead of a path, wouldn't work.
 
-**2. ls (list)**
+# **2. ls (list)**
 
 ![image](ls(noarg).jpg)
 
@@ -28,7 +28,7 @@
 
 - For this ls command, we use the ls line command in a terminal, with the argument of the README file that resides within our lecture1 path, and when we press enter, it shows a similar error line to when we tried using cd towards README, because README isn't a directory, nor is it exactly a file which hosts any paths or files/folders underneath it. As such, there's an error, since there's nothing to display, and since README isn't a directory or file that has anything under it. The working directory at that moment was /home, but since we are using ls, no change in directory is necessary.
 
-**3. cat (concatenate)**
+# **3. cat (concatenate)**
 
 ![image](cat(noarg).jpg)
 
