@@ -50,7 +50,7 @@ a) **Path to ssh Keys (Public and private)**
 
 b) **Terminal ssh without passwords**
 ![image](sshSignInNoPassWord.jpg)
-![image](ssshSignInNoPassWords2.jpg)
+![image](ssshSignInNoPassWord2.jpg)
 
 
 # 3. **Reflection**
