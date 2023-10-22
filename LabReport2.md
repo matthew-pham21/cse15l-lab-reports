@@ -29,7 +29,7 @@ c) **StringServer AddLicorice**
 
 - For this command, the methods called in our StringServer file are
 
-  ```
+```
     parameters = url.getQuery().split("=");
 ```
 
@@ -40,4 +40,5 @@ c) **StringServer AddLicorice**
     parameters2.add(num + ". " + parameters[1]);
     return String.format(num + ". " + parameters[1] + "\n");
 ```
+
 - Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **licorice**
