@@ -21,7 +21,7 @@ b) **StringServer addHello**
     parameters2.add(num + ". " + parameters[1]);
     return String.format(num + ". " + parameters[1] + "\n");
 ```
-- Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **hello**
+- Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **hello**.
 
 
 c) **StringServer AddLicorice**
@@ -41,4 +41,16 @@ c) **StringServer AddLicorice**
     return String.format(num + ". " + parameters[1] + "\n");
 ```
 
-- Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **licorice**
+- Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **licorice**.
+
+
+# **2. SSH Key Access**
+a) **Path to ssh Keys (Public and private)**
+![image](sshKeyPathsPubAndPriv.jpg)
+
+b) **Terminal ssh without passwords**
+![image](sshSignInNoPassWord.jpg)
+![image](ssshSignInNoPassWords2.jpg)
+
+
+# 3. **Reflection**
