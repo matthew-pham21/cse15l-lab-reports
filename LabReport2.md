@@ -7,9 +7,10 @@ a) **StringServer Code**
 
 b) **StringServer addHello**
 ![image](StringServerAddHello.jpg)
-````
-```
+
 - For this command, the methods called in our StringServer are
+  ````
+  ```
   if (url.getPath().equals("/add"))
   {
     parameters = url.getQuery().split("=");
