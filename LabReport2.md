@@ -7,7 +7,8 @@ a) **StringServer Code**
 
 b) **StringServer addHello**
 ![image](StringServerAddHello.jpg)
-
+````
+```
 - For this command, the methods called in our StringServer are
   if (url.getPath().equals("/add"))
   {
@@ -17,4 +18,5 @@ b) **StringServer addHello**
     parameters2.add(num + ". " + parameters[1]);
     return String.format(num + ". " + parameters[1] + "\n");
   }
-
+```
+````
