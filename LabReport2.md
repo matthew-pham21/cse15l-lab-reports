@@ -10,12 +10,13 @@ b) **StringServer addHello**
 
 - For this command, the methods called in our StringServer are
   ````
-  if (url.getPath().equals("/add"))
-  {
     parameters = url.getQuery().split("=");
-    if (parameters[0].equals("s")) {
+````
+- Essentially performing two different methods as a result of the URI import, with ```.getQuery()``` as well as ```.split("=")``` which is called on the equals sign, the relevant argument to the split method. Of the relevant fields in the class, for ```parameters``` to be set to this, we have to run it through an if statement, which checks if ````url.getPath().equals("/")````, so that the split only happens when these conditions are met. The parameters array was changed in this case, from an empty array to being filled with the type of search query ("s", "q", etc.) and whatever arguments were inputted. 
+
+ 
+if (parameters[0].equals("s")) {
     num += 1;
     parameters2.add(num + ". " + parameters[1]);
     return String.format(num + ". " + parameters[1] + "\n");
   }
-````
