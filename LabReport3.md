@@ -13,7 +13,7 @@
     assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);
   }
 ```
-- which would cause an error output when using the junit compiling commands, and here is what the error specific to ArrayReversedInPlace would be:
+- This is a Junit test, which tests the functionality of testReverseInPlace2 which would cause an error output when using the junit compiling commands, and here is what the error specific to ArrayReversedInPlace would be:
 
 ```
 1) testReverseInPlace2(ArrayTests)
@@ -34,3 +34,4 @@ Caused by: java.lang.AssertionError: expected:<6> but was:<5>
         at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
         ... 38 more
 ```
+- The error is that the ``` assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);``` call turned out to be false, likely because the two inputs were not equa, as indicated that these arrays differed at element of index 2, where we expected ```6``` for both, but the ReversedInPlace ended up causing the wrong outputs.
