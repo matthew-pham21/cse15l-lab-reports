@@ -3,7 +3,7 @@
 ## **1) Bugs Examination: ArrayReversedInPlace**
 
 **1a) A failure-inducing input for ArrayReversedInPlace**
-- One Such failure-inducing input for ArrayReversedInPlace would be the following:
+- One Such failure-inducing input for ```ArrayReversedInPlace``` would be the following:
 
 ```
 @Test
@@ -35,3 +35,26 @@ Caused by: java.lang.AssertionError: expected:<6> but was:<5>
         ... 38 more
 ```
 - The error is that the ``` assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);``` call turned out to be false, likely because the two inputs were not equal, as indicated that these arrays differed at element of index 2, where we expected ```6``` for both, but the ```ReversedInPlace``` ended up causing the wrong outputs.
+
+**1b) Non-failure inducing Input for ArrayReversedInPlace**
+- One such non-failure inducing output for ```ArrayReversedInPlace``` would be the following:
+
+  ```
+  @Test
+  public void testReverseInPlace3() {
+    int[] input2 = { 4 };
+    ArrayExamples.reverseInPlace(input2);
+    assertArrayEquals(new int[] { 4 }, input2);
+  }
+```
+- Which outputs the following:
+
+```
+JUnit version 4.13.2
+.....
+Time: 0.035
+
+OK (5 tests)
+```
+
+- This means that this input for the ArrayReversedInPlace function would be acceptable and not induce a failure. 
