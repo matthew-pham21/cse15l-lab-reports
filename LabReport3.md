@@ -2,8 +2,8 @@
 
 ## **1) Bugs Examination: ArrayReversedInPlace**
 
-**1a) A failure-inducing Output for ArrayReversedInPlace**
--One Such failure-inducing output for ArrayReversedInPlace would be the following:
+**1a) A failure-inducing input for ArrayReversedInPlace**
+-One Such failure-inducing input for ArrayReversedInPlace would be the following:
 
 ```
 @Test
@@ -12,4 +12,25 @@
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);
   }
+```
+which would cause an error as such:
+
+```
+1) testReverseInPlace2(ArrayTests)
+arrays first differed at element [2]; expected:<6> but was:<5>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReverseInPlace2(ArrayTests.java:16)
+        ... 32 trimmed
+Caused by: java.lang.AssertionError: expected:<6> but was:<5>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 38 more
 ```
