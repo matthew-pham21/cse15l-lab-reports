@@ -39,7 +39,7 @@ Caused by: java.lang.AssertionError: expected:<6> but was:<5>
 **1b) Non-failure inducing Input for ArrayReversedInPlace**
 - One such non-failure inducing output for ```ArrayReversedInPlace``` would be the following:
 
-  ```
+```
   @Test
   public void testReverseInPlace3() {
     int[] input2 = { 4 };
@@ -47,6 +47,7 @@ Caused by: java.lang.AssertionError: expected:<6> but was:<5>
     assertArrayEquals(new int[] { 4 }, input2);
   }
 ```
+
 - Which outputs the following:
 
 ```
