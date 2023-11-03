@@ -47,7 +47,7 @@ c) **StringServer AddWorld**
 # **2. SSH Key Access**
 a) **Path to ssh Keys (Public)**
 ![image](PathToPublicKeyOnIeng6.png)
-- In the ssh login, we have demonstrated that when we ```ls``` into the ```authorized_keys``` path, it shows us the path to the public keys, which reside in ```/home/linux/ieng6/cs15lfa23/cs15lfa23gs/.ssh/authorized_keys```
+- In the ssh login, we have demonstrated that when we ```ls``` into the ```authorized_keys``` path, it shows us the path to the public keys, which reside in ```/home/linux/ieng6/cs15lfa23/cs15lfa23gs/.ssh/authorized_keys```.
 
 b) **Path to ssh Keys (Private)**
 ![image](PathToPrivateKeyOnMyComputer.png)
