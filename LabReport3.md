@@ -60,3 +60,27 @@ Caused by: java.lang.AssertionError: expected:<6> but was:<5>
 
 - The symptom demonstrates that all tests run okay, and that the ```assertArrayEquals``` junit test passes, and works.
 
+**1d) What is the bug? Demonstrate the before and after.**
+
+- The bug of the function (beforehand) which results in the symptoms and failures is as such:
+
+  ```
+  for (int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  ```
+
+  - The reason for this bug is mainly due to the idea of swapping finitely, such that if you have any amount of unique elements in an array, then eventually, at the halfway point, both sides of the array will be consisting of the same values, and so swapping is futile, since the original values of the first half have been overriden already. Thus, to fix this, I would argue to use a temp variable named ```temp``` or something of the like. Then you would set ```temp``` to the corresponding beginning of the array, make sure that the array only runs until halfway such that both sides stop once everything is properly reversed, and swap accordingly, such that the code after fixing the bug looks like such:
+
+ ```
+static void reverseInPlace(int[] arr) {
+    int temp = 0;
+    for (int i = 0; i < arr.length / 2; i += 1) {
+      temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length-i-1] = temp;
+    }
+```
+- After this, everything gets swapped accordingly, the assertArrayEquals should be able to work.
+- The fix addresses the issue, because now, for each corresponding element in the first half of the array, we store it in a ```temp``` variable, such that when that element gets changed to the same value as the last element, we still have stored that original first element somewhere. Then we can set that last element in the back half to the temp, so that these elements are properly reversed. We are only doing this up until the halfpoint of the array, if only because, at the halfway point, we have reversed every element. 
+
