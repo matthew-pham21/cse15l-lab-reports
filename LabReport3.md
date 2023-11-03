@@ -3,7 +3,7 @@
 ## **1) Bugs Examination: ArrayReversedInPlace**
 
 **1a) A failure-inducing input for ArrayReversedInPlace**
--One Such failure-inducing input for ArrayReversedInPlace would be the following:
+- One Such failure-inducing input for ArrayReversedInPlace would be the following:
 
 ```
 @Test
@@ -13,7 +13,7 @@
     assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);
   }
 ```
-which would cause an error output when using the junit compiling commands, and here is what the error specific to ArrayReversedInPlace would be:
+- which would cause an error output when using the junit compiling commands, and here is what the error specific to ArrayReversedInPlace would be:
 
 ```
 1) testReverseInPlace2(ArrayTests)
