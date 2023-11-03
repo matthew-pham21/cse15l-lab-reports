@@ -3,10 +3,10 @@
 # **1. StringServer**
 
 a) **StringServer Code**
-![image](StringServerCode.jpg)
+![image](StringServerHome.png)
 
 b) **StringServer addHello**
-![image](StringServerAddHello.jpg)
+![image](StringServerAddHello.png)
 
 - For this command, the methods called in our StringServer file are
 
@@ -25,7 +25,7 @@ b) **StringServer addHello**
 
 
 c) **StringServer AddWorld**
-![image](StringServerAddLicorice.jpg)
+![image](StringServerAddWorld.png)
 
 - For this command, the methods called in our StringServer file are
 
@@ -41,16 +41,20 @@ c) **StringServer AddWorld**
     return String.format(num + ". " + parameters[1] + "\n");
 ```
 
-- Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **licorice**.
+- Three methods in a row are performed following the if statement ```if (parameters[0].equals("s"))```, which change the relative fields of ```num``` (incrementing num), using the ```add``` method to the relative field of arrayList ```parameters2``` (such that it adds the string to the list), and then returns that exact string using the ```String.format``` method. The ```parameters2``` method is altered such that printing the arrayList on the home page would fill out accordingly. In this case, ```parameters[1]``` is equal to **world**.
 
 
 # **2. SSH Key Access**
-a) **Path to ssh Keys (Public and private)**
-![image](sshKeyPathsPubAndPriv.jpg)
+a) **Path to ssh Keys (Public)**
+![image](PathToPublicKeyOnIeng6.png)
+- In the ssh login, we have demonstrated that when we ```ls``` into the ```authorized_keys``` path, it shows us the path to the public keys, which reside in ```/home/linux/ieng6/cs15lfa23/cs15lfa23gs/.ssh/authorized_keys```
 
-b) **Terminal ssh without passwords**
-![image](sshSignInNoPassWord.jpg)
-![image](ssshSignInNoPassWord2.jpg)
+b) **Path to ssh Keys (Private)**
+![image](PathToPrivateKeyOnMyComputer.png)
+- In my own computer, we have demonstrated that in the ssh key, when we ```ls``` into the ```/Users/matthewpham/.ssh/id_rsa``` path, then it reveals to us the path of the private key, which is the same, otherwise known as ```/Users/matthewpham/.ssh/id_rsa```. 
+
+c) **Terminal ssh without passwords**
+![image](SSHWOPASSWORD.png)
 
 
 # 3. **Reflection**
