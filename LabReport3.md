@@ -58,4 +58,8 @@ Time: 0.035
 OK (5 tests)
 ```
 
-- This means that this input for the ArrayReversedInPlace function would be acceptable and not induce a failure. 
+- This means that this input for the ArrayReversedInPlace function would be acceptable and not induce a failure.
+
+**1c) What are the symptoms for ArrayReversedInPlace?**
+
+
