@@ -48,18 +48,15 @@ Caused by: java.lang.AssertionError: expected:<6> but was:<5>
   }
 ```
 
-- Which outputs the following:
-
-```
-JUnit version 4.13.2
-.....
-Time: 0.035
-
-OK (5 tests)
-```
-
-- This means that this input for the ArrayReversedInPlace function would be acceptable and not induce a failure.
-
 **1c) What are the symptoms for ArrayReversedInPlace?**
 
+- For the failure-inducing input, the symptoms were as follows:
+  ![image](ArrayReversedInPlaceFailureInduce.png)
+
+- The symptom is that the ``` assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);``` call turned out to be false, likely because the two inputs were not equal, as indicated that these arrays differed at element of index 2, where we expected ```6``` for both, but the ```ReversedInPlace``` ended up causing the wrong outputs.
+ 
+- For the successful output, the symtpom was as follows (although it's not particularly a bad symptom):
+ ![image](ArrayReversedInPlaceSuccess.png)
+
+- The symptom demonstrates that all tests run okay, and that the ```assertArrayEquals``` junit test passes, and works.
 
