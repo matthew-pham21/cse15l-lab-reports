@@ -5,9 +5,11 @@
 **1a) A failure-inducing Output for ArrayReversedInPlace**
 -One Such failure-inducing output for ArrayReversedInPlace would be the following:
 
-``` @Test
+```
+@Test
   public void testReverseInPlace2() {
     int[] input2 = { 3, 6, 5, 2 };
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[] { 2, 5, 6, 3 }, input2);
-  } ```
+  }
+```
