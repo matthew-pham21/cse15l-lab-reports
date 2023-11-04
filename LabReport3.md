@@ -91,7 +91,7 @@ static void reverseInPlace(int[] arr) {
 **Preknowledge**: 
 - The ```grep``` command essentially takes the form of the following: ```grep <<string>> <<files>>```. Essentially it searches through files (or multiple) until it finds the string specified in the command line. It then prints the lines which contain those exact strings. The files can be written as absolute paths as well. 
 
-**2a) ```Grep``` with command line option ```-i```**
+**2a) ```grep``` with command line option ```-i```**
 - The first input I used with ```grep -i``` was as follows:
 
 ```
@@ -107,7 +107,7 @@ grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/bio
 ```
 - What this ```-i``` function is doing is searching the entire file of ```gb-2002-3-12-research0088.txt``` for the string ```"Approaches"```, where the ```-i``` function ignores capitalization, and prints out any line that contains ```approaches```, regardless of the capitalization, and this is useful when searching for any instance of a word through a file, and not having to run ```grep``` multiple times to find multiple instances where capitalization is different.
 
-- The second input I used with ```grep -i``` was as follows:
+- The **second input** I used with ```grep -i``` was as follows:
 
 ```
 grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0086.txt
@@ -129,3 +129,139 @@ grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/bio
 
 
 - This was the website in which I discovered the ```grep -i``` command line option: [https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix]
+
+
+**2b) ```grep``` with command line ```-c```**
+
+- The **first input** I used with ```grep -c``` was as follows:
+
+```
+grep -c "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
+```
+- The result was:
+
+```
+1
+```
+
+- The **second input** I used with ```grep -c``` was as follows:
+
+```
+grep -c "approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
+```
+
+- The result was:
+
+```
+3
+```
+
+- The difference in results is due to capitalization. However, what the ```grep -c``` command really does is simply print out the **number** of lines which contain the specified string in the command line, which were ```1``` and ```3```, due to different capitalizations. This command line function is useful for streamlining the count on how many words exist in a certain file, like a word count of sorts.
+
+- The same website was used for finding this command: [https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix]
+
+**2c) ```grep``` with commandline line ```-n```**
+
+- The **first input** I used with ```grep -n``` was:
+
+```
+grep -n "approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
+````
+
+- The result was:
+
+```
+337:          approaches based on pattern-recognition algorithms,
+341:          computational approaches impracticable at present.
+584:          data and other data-mining approaches will establish sets
+```
+
+- The **second input** I used with ```grep -n``` was:
+
+```
+grep -n "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
+```
+
+- The result was:
+
+```
+28:        Approaches using DNA microarrays have been successful in
+```
+
+- The difference in results is because there's only one instance of ```"Approaches``` where it is capitalized, and three instances, when ```"approaches``` is lower-case. Using ```grep -n``` gives us the line number which corresponds to when we find a specified string, which is helpful for keying in or finding the exact location of whatever strings we specify.
+
+- The website I found this command line option on was much the same as before: [https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix]
+
+
+**2d) ```grep``` with command line ```-v```**
+
+- The **first input** I used with ```grep -v``` was:
+
+```
+grep -v "whistleblower" /Users/matthewpham/Documents/GitHub/docsearch/technical/plos/pmed.0020281.txt       
+```
+
+- And the output was:
+
+```
+ Whistleblowers serve no function if they cannot tell their stories. The present story of
+        whistleblowing—as discussed, in part, in 
+        PLoS Medicine —that involves the pharmaceutical industry, pharmaceutical
+        benefit management corporations, the managed care industry, and the political and lobbying
+        forces that zealously guard their secrets could not have been told without the help of
+        courageous men and women [1, 2] For that reason, those of us who congregated in Washington,
+        D.C., on May 15th, 2005, at the invitation and support of the Public Library of Science and
+        the Government Accountability Project feel particularly humbled and grateful to these two
+        sponsors. Our convictions could not have been aired were it not for the essential First
+        Amendment work of responsible journalists, who exemplify the best in investigatory
+        research.
+        For me, whistleblowing is not a theoretical exercise. It has a human face and tangible
+        features. It is the face of children and adults who have been injured or killed by
+        misrepresented pharmaceuticals; clinical research trial results that have been sequestered
+        from the scientific community and whose incomplete findings cause injury; and
+        pharmaceuticals that are detailed to physicians, not to save lives or necessarily improve
+        the health or welfare of the recipients, but to make money.
+        passionate, and often successful, because our efforts have a different goal than the
+        corporations and political interests whose operations we occasionally challenge. Our goal
+        is to tell the truth. That honest effort is the source of any ethical difference we can or
+        assault of unprecedented odds against being heard put forth by that sum of political power,
+        expediency, and money.
+        improve the status quo—be it in pharmaceutical marketing or managed-care decision
+        making—cannot proceed or flourish without it.
+        Ralph Waldo Emerson, American essayist and philosopher (1803–1882), commented about
+        success (I have adapted his comments for all of us who gathered in Washington in mid-May
+        2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
+        redeemed social condition; to know even one life breathed easier because you have lived;
+```
+
+- The **second input** I used with ```grep -v``` was:
+
+```
+grep -i  -v "it" /Users/matthewpham/Documents/GitHub/docsearch/technical/plos/pmed.0020281.txt
+```
+
+- And the output was:
+
+```
+Whistleblowers serve no function if they cannot tell their stories. The present story of
+        whistleblowing—as discussed, in part, in 
+        PLoS Medicine —that involves the pharmaceutical industry, pharmaceutical
+        courageous men and women [1, 2] For that reason, those of us who congregated in Washington,
+        Amendment work of responsible journalists, who exemplify the best in investigatory
+        research.
+        misrepresented pharmaceuticals; clinical research trial results that have been sequestered
+        pharmaceuticals that are detailed to physicians, not to save lives or necessarily improve
+        the health or welfare of the recipients, but to make money.
+        In the lonely and, at times, discouraging world of whistleblowing, we whistleblowers are
+        passionate, and often successful, because our efforts have a different goal than the
+        is to tell the truth. That honest effort is the source of any ethical difference we can or
+        expediency, and money.
+        A whistleblower's success depends upon competent and articulate media. The debate to
+        Ralph Waldo Emerson, American essayist and philosopher (1803–1882), commented about
+        success (I have adapted his comments for all of us who gathered in Washington in mid-May
+        this is to have succeeded [as a whistleblower].”
+```
+
+- This time, I combined two different command line options, for the second example, ignoring capitalization (```-i```), and using the ```-v``` command in both, which printed every line in the ```pmed.0020281.txt``` file in the ```plos``` subdirectory that was not the specified string. It worked out quite well, and is a good way to print things out and filter out lines that contain certain phrases, such that you can go and then manually find and delete both of them.
+
+- The website I used was much the same as the last three: [https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix]
