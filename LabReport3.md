@@ -86,13 +86,13 @@ static void reverseInPlace(int[] arr) {
 
 
 
-## **2) Command Line Investigation: ```Grep``` and its Command Line Options**
+## **2) Command Line Investigation: ```grep``` and its Command Line Options**
 
 **Preknowledge**: 
 - The ```grep``` command essentially takes the form of the following: ```grep <<string>> <<files>>```. Essentially it searches through files (or multiple) until it finds the string specified in the command line. It then prints the lines which contain those exact strings. The files can be written as absolute paths as well. 
 
 **2a) ```Grep``` with command line option ```-i```**
-- The first input I used with ```Grep -i``` was as follows:
+- The first input I used with ```grep -i``` was as follows:
 
 ```
 grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
@@ -105,4 +105,27 @@ grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/bio
           computational approaches impracticable at present.
           data and other data-mining approaches will establish sets
 ```
-- What this ```-i``` function is doing is searching the entire file of ```gb-2002-3-12-research0088.txt``` for the string ```"Approaches"```, where the ```-i``` function ignores capitalization, and prints out any line that contains ```approaches```, regardless of the capitalization, and this is useful when searching for any instance of a word through a file, and not having to run ```grep``` multiple times to find multiple instances where capitalization is different. 
+- What this ```-i``` function is doing is searching the entire file of ```gb-2002-3-12-research0088.txt``` for the string ```"Approaches"```, where the ```-i``` function ignores capitalization, and prints out any line that contains ```approaches```, regardless of the capitalization, and this is useful when searching for any instance of a word through a file, and not having to run ```grep``` multiple times to find multiple instances where capitalization is different.
+
+- The second input I used with ```grep -i``` was as follows:
+
+```
+grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0086.txt
+```
+- This resulted in the following output:
+
+```
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt:        Approaches using DNA microarrays have been successful in
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt:          approaches based on pattern-recognition algorithms,
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt:          computational approaches impracticable at present.
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt:          data and other data-mining approaches will establish sets
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0086.txt:        approaches will substantially aid efforts to annotate these
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0086.txt:        implications of our results for comparative approaches to
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0086.txt:          EST/cDNA data exists will require alternative approaches,
+/Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0086.txt:          expression data implicit in current approaches to
+```
+
+- This printed out every line which contains the word ```"approaches"```, however this time across two different files: ```gb-2002-3-12-research0088.txt``` and ```gb-2002-3-12-research0086.txt```. It also ignores capitalization, and in this case, we can see that there is no capitalization of ```"approaches"``` in ```gb-2002-3-12-research0086.txt``` so it tells us the differences in these small usages.
+
+
+- This was the website in which I discovered the ```grep -i``` command line option: [https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix]
