@@ -84,3 +84,24 @@ static void reverseInPlace(int[] arr) {
 - After this, everything gets swapped accordingly, the assertArrayEquals should be able to work.
 - The fix addresses the issue, because now, for each corresponding element in the first half of the array, we store it in a ```temp``` variable, such that when that element gets changed to the same value as the last element, we still have stored that original first element somewhere. Then we can set that last element in the back half to the temp, so that these elements are properly reversed. We are only doing this up until the halfpoint of the array, if only because, at the halfway point, we have reversed every element. 
 
+
+
+## **2) Command Line Investigation: ```Grep``` and its Command Line Options**
+
+**Preknowledge**: 
+- The ```grep``` command essentially takes the form of the following: ```grep <<string>> <<files>>```. Essentially it searches through files (or multiple) until it finds the string specified in the command line. It then prints the lines which contain those exact strings. The files can be written as absolute paths as well. 
+
+**2a) ```Grep``` with command line option ```-i```**
+- The input I used with ```Grep -i``` was as follows:
+
+```
+grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
+```
+-This printed out the following: 
+
+```
+ Approaches using DNA microarrays have been successful in
+          approaches based on pattern-recognition algorithms,
+          computational approaches impracticable at present.
+          data and other data-mining approaches will establish sets
+```
