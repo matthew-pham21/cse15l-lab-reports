@@ -92,12 +92,12 @@ static void reverseInPlace(int[] arr) {
 - The ```grep``` command essentially takes the form of the following: ```grep <<string>> <<files>>```. Essentially it searches through files (or multiple) until it finds the string specified in the command line. It then prints the lines which contain those exact strings. The files can be written as absolute paths as well. 
 
 **2a) ```Grep``` with command line option ```-i```**
-- The input I used with ```Grep -i``` was as follows:
+- The first input I used with ```Grep -i``` was as follows:
 
 ```
 grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/biomed/gb-2002-3-12-research0088.txt
 ```
--This printed out the following: 
+- This printed out the following: 
 
 ```
  Approaches using DNA microarrays have been successful in
@@ -105,3 +105,4 @@ grep -i "Approaches" /Users/matthewpham/Documents/GitHub/docsearch/technical/bio
           computational approaches impracticable at present.
           data and other data-mining approaches will establish sets
 ```
+- What this ```-i``` function is doing is searching the entire file of ```gb-2002-3-12-research0088.txt``` for the string ```"Approaches"```, where the ```-i``` function ignores capitalization, and prints out any line that contains ```approaches```, regardless of the capitalization, and this is useful when searching for any instance of a word through a file, and not having to run ```grep``` multiple times to find multiple instances where capitalization is different. 
