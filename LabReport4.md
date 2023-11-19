@@ -1,0 +1,1 @@
+## **In this Lab, we are tasked with repeating the process of our in-person Lab 7, which is to utilize the VIM editor to edit functions, while also learning different techniques to help edit more efficiently. Here's the results of one such trial** 
