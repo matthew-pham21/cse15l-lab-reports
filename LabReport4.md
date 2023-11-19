@@ -1,7 +1,9 @@
 ## **In this Lab, we are tasked with repeating the process of our in-person Lab 7, which is to utilize the VIM editor to edit functions, while also learning different techniques to help edit more efficiently. Here's the results of one such trial:** 
 
 ## **#4) Logging into Ieng6**
+
 [image](SSHLogIn.png)
+
 **Keys Pressed**: ```ssh cs15lfa23gs@ieng6.ucsd.edu``` was accessed by typing in each individual key into this string, and then pressing the ```<enter>``` key to fully log in to the ieng6 account/computer. 
 
 ## **#5) Testing ListExamples.java without changes**
