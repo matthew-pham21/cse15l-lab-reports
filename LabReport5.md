@@ -3,3 +3,4 @@
 ## **1) EdStem Post and Response**
 Student:
 ```Hello, I'm currently experiencing issues with my code, which is to add together integer lists using a **merge** method, into one larger list, where we compare two indexed integers, and add the greater number to the new list first, then add the other integers in later. However, I keep running into the following bugs, and can't decipher how to fix them. Any advice would be helpful! I've included a screenshot below to showcase the bugs.```
+![image](ErrorInducingBugReport5.png)
