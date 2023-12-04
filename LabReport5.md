@@ -64,7 +64,7 @@ Hi thank you so much for the suggestions. I found out what the issue was with my
 
 ## **2) Reflection**
 
-
+- Something in lab that really was hammered in was the use of VIM as a text editor, perhaps the most forefront and pertinent memory I can recall as of right now. It's very likely because I constantly used it, and because of its inefficiency, that I somehow found myself liking it, because it just requires a great deal of precise consistency when utilizing it. I was not aware of VIM beforehand aside from it being the butt of several jokes. I think I also learned that having a lab partner or someone to help work on code alongside you is extremely helpful. Shout out to my friend Diego, who was my lab partner for most of the second half of the labs this quarter, as discussing concepts and how to parse through and solve issues is far more interesting and fun than having to go alone on the coding in silence. These two were the things which stuck out the most in this second half. However, I also appreciated learning how grading scripts worked (even if they seem to be a pain to write), and I intensely dislike the jdb function, but I guess it is integral, so it's good that we also learned that. 
 
 
 
