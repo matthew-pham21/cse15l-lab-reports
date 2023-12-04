@@ -1,4 +1,4 @@
-## **In this lab report, we are required to create a debugging scenario, which involves constructing an error-inducing function and bug, utilizing at least one bash script and one java script. We also create a conversation involving edStem, and making a post, while we have to respond as a TA with a leading question or a command. We must detail out every step of this process. Here is the conversation:
+## **In this lab report, we are required to create a debugging scenario, which involves constructing an error-inducing function and bug, utilizing at least one bash script and one java script. We also create a conversation involving edStem, and making a post, while we have to respond as a TA with a leading question or a command. We must detail out every step of this process. Here is the conversation:**
 
 ## **1) EdStem Post and Response**
 **Student**:
