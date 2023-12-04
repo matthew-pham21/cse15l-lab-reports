@@ -24,12 +24,13 @@ TA
 Hi thank you so much for the suggestions. I found out what the issue was with my code: it was twofold. The first issue was that in one of my lines of code, for the if statement that determines which integer to add first, it made it such that the greater integer of the two being compared was the one being added first, the complete opposite of what the intention of the merge function was. That was part of the issue that created the bug of improper matching. However, the second issue was that I had a separate indexing error. In my else statement, rather than only incrementing one of the indexes, as only one integer would be added, it incremented both indexes, and so, that was what was causing the error with regards to why the actual length was different from the expected length, one array was shorter than the other. Thank you!
 
 **Full Breakdown of the debugging scenario**:
-- **File and Directory Structure**:
+
+## - **File and Directory Structure**:
 
 ![image](FileAndDirectoryStructureReport5.png)
 
 
-- **Contents of All Files: Before**
+## - **Contents of All Files: Before**
   
 **a**) **ListExamples.java**
 
@@ -43,17 +44,17 @@ Hi thank you so much for the suggestions. I found out what the issue was with my
 
 ![image](testSH.png)
 
-- **Contents of Files: After**
+## - **Contents of Files: After**
 
 **a**) **ListExamples.java (Only One Altered)**
 
 ![image](ListExamplesAfterFixReport5.png)
 
-- **Full Command Line to Trigger Bug**
+## - **Full Command Line to Trigger Bug**
 
 ![image](ErrorInducingBugReport5.png)
 
-- **Description of how to fix the bugs**:
+## - **Description of how to fix the bugs**:
 
 **a**) First, we need to fix the first ```if``` statement within the first ```for``` loop. It has it such that the statement checks and adds the greater number, ie. ``` if (list1.get(index1) < list2.get(index2))```. We must fix this, such that it becomes ```(list2.get(index2) < list1.get(index1))```. This partially contributed towards why we kept getting the wrong integers at the wrong indices. 
 
