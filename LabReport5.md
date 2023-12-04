@@ -19,6 +19,7 @@ TA
 
 
 ![image](TerminalOutputAfterFixReport5.png)
+
 **Student**:
 Hi thank you so much for the suggestions. I found out what the issue was with my code: it was twofold. The first issue was that in one of my lines of code, for the if statement that determines which integer to add first, it made it such that the greater integer of the two being compared was the one being added first, the complete opposite of what the intention of the merge function was. That was part of the issue that created the bug of improper matching. However, the second issue was that I had a separate indexing error. In my else statement, rather than only incrementing one of the indexes, as only one integer would be added, it incremented both indexes, and so, that was what was causing the error with regards to why the actual length was different from the expected length, one array was shorter than the other. 
 
